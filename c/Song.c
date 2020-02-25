@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main(int argc, char **argv) {
-    printf("There was an old lady who swallowed a fly.\n" \
+char *generate() {
+    return ("There was an old lady who swallowed a fly.\n" \
             "I don't know why she swallowed a fly - perhaps she'll die!\n" \
             "\n" \
             "There was an old lady who swallowed a spider;\n" \
@@ -41,5 +41,9 @@ int main(int argc, char **argv) {
             "\n" \
             "There was an old lady who swallowed a horse...\n" \
             "...She's dead, of course!");
+}
+
+int main(int argc, char **argv) {
+    printf("%s", generate());
     return 0;
 }
